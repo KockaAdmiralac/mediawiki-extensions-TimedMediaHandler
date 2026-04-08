@@ -3,7 +3,7 @@
 namespace MediaWiki\TimedMediaHandler;
 
 use File;
-use Html;
+use MediaWiki\Html\Html;
 use IContextSource;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\TimedMediaHandler\WebVideoTranscode\WebVideoTranscode;

@@ -10,14 +10,14 @@
 
 namespace MediaWiki\TimedMediaHandler\WebVideoTranscode;
 
-use CdnCacheUpdate;
-use ConfigException;
+use MediaWiki\Deferred\CdnCacheUpdate;
+use MediaWiki\Config\ConfigException;
 use DeferredUpdates;
 use Exception;
-use File;
-use HTMLCacheUpdateJob;
-use IForeignRepoWithDB;
-use IForeignRepoWithMWApi;
+use MediaWiki\FileRepo\File\File;
+use MediaWiki\JobQueue\Jobs\HTMLCacheUpdateJob;
+use MediaWiki\FileRepo\IForeignRepoWithDB;
+use MediaWiki\FileRepo\IForeignRepoWithMWApi;
 use MediaWiki\FileBackend\FSFile\TempFSFileFactory;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\TimedMediaHandler\Handlers\FLACHandler\FLACHandler;
